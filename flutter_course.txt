@@ -1,0 +1,21 @@
+1. BMI Calculator
+	
+	a) Creating an App Theme
+		For a consistent theme across pages/activities of your app. Requires a *ThemeData*
+
+	b) Update certain parts of the theme:
+		theme:ThemeData.dark().copyWith(
+			primaryColor: Color(0xFF0A0E21)
+			scaffoldBackgroundColor: Color(0xFF0A0E21)
+		)
+
+	c) For more granular control over the Theme for particular widgets, we can wrap the widgets in a *Theme Widget* and provide the ThemeData to *data:*.
+
+	d) The main.dart generally contains a lot of theming and nothing else.
+
+	e) For evenly spaced widgets, use the *Expanded* widget.
+
+	f) You can *extract widget* from Flutter Outline to create a custom widget.
+
+	g) Stateless widgets are immutable. Therefore *final* or *const* has to be used for its properties. *const* is a compile-time property and it cannot grasp run-time properties (like number of times button clicked).
+	Basically a const variable HAS to be initialised, however that's not the case with *final*.
